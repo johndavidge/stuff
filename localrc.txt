@@ -1,0 +1,18 @@
+disable_service n-net
+enable_service q-svc
+enable_service q-agt
+enable_service q-dhcp
+enable_service q-l3
+enable_service q-meta
+DATABASE_PASSWORD=nova
+RABBIT_PASSWORD=nova
+SERVICE_TOKEN=nova
+SERVICE_PASSWORD=nova
+ADMIN_PASSWORD=nova
+LOGFILE=logs/stack.sh.log
+SWIFT_HASH=nova
+IGNORE_FIXED_RANGE_V6=2001:db8:1234::/64
+IGNORE_IPV6_NETWORK_GATEWAY=2001:db8:1234:0000:0000:0000:0000:0001
+IPV6_RA_MODE=slaac
+IPV6_ADDRESS_MODE=slaac
+IP_VERSION=4+6
